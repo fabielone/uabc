@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 void gotoxy(int x, int y)
 {
     printf("%c[%d;%df", 0x1B, y, x);
 }
+
+
 
 int main(void)
 {
@@ -16,15 +19,15 @@ int main(void)
 
     printf("\u2557");
 
-    gotoxy(1, 24);
+    gotoxy(1, 25);
 
     printf("\u255A");
 
-    gotoxy(80, 24);
+    gotoxy(80, 25);
 
     printf("\u255D");
 
-    for (int a = 2; a < 19; a++)
+    for (int a = 2; a < 25; a++)
     {
         gotoxy(1, a);
         printf("\u2551");
@@ -36,7 +39,7 @@ int main(void)
     {
         gotoxy(i, 1);
         printf("\u2550");
-        gotoxy(i, 24);
+        gotoxy(i, 25);
         printf("\u2550");
     }
 
