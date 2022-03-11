@@ -27,7 +27,7 @@ int main(void)
 
     printf("\u255D");
 
-    for (int a = 2; a < 25; a++)
+    for (int a = 2; a < 24; a++)
     {
         gotoxy(1, a);
         printf("\u2551");
@@ -39,16 +39,37 @@ int main(void)
     {
         gotoxy(i, 1);
         printf("\u2550");
-        gotoxy(i, 25);
+        gotoxy(i, 24);
         printf("\u2550");
     }
 
-    gotoxy(1, 1);
+    for (int a = 2; a < 24; a++)
+    {
+        gotoxy(3, a);
+        printf("\u2551");
+        gotoxy(78, a);
+        printf("\u2551");
+    }
+
+    for (int i = 2; i < 80; i++)
+    {
+        gotoxy(i, 2);
+        printf("\u2550");
+        gotoxy(i, 22);
+        printf("\u2550");
+    }
+
+    /*  gotoxy(24, 1);
+      printf("hello");
+      gotoxy(25, 1);
+      printf("hello");
+
+  */
+    gotoxy(24, 2);
     printf("hello");
-    gotoxy(25, 1);
+    gotoxy(1, 25);
     printf("\n ");
 
     scanf("%d", &num);
-
     return 0;
 }
