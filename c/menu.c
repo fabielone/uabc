@@ -12,8 +12,10 @@ int main(void)
 
     system("clear");
     gotoxy(1, 1);
+    // made some changes to here
+    // haahahahah
 
-    printf("\u2554");
+    // printf("\u2554");
 
     gotoxy(80, 1);
 
