@@ -25,5 +25,11 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "FR_ACT1.C": "cpp",
+    "FR_ACT1_.C": "cpp",
+    "FR_ACT1_1.C": "cpp",
+    "FRG_ACT1_1.C": "cpp"
+  }
 }
