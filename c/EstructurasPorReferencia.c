@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+void bubble(char []);
+
 
 typedef struct Alumno  {
 

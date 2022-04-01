@@ -39,7 +39,7 @@ Visualizar(Inicial);
 };
 
 void Visualizar (struct Alumno Datos) {
-system("clear");
+system("cls");
 printf(" \nMatricual: %s", Datos.Matricula);
 printf("\nNombre: %s", Datos.Nombre);
 printf( "\nApellido Paterno: %s", Datos.ApellidoP);

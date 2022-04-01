@@ -30,6 +30,12 @@
     "FR_ACT1.C": "cpp",
     "FR_ACT1_.C": "cpp",
     "FR_ACT1_1.C": "cpp",
-    "FRG_ACT1_1.C": "cpp"
+    "FRG_ACT1_1.C": "cpp",
+    "FRG_A1_2.C": "cpp",
+    "FRG_A1_1.C": "cpp",
+    "FRG_A1_3.C": "cpp",
+    "FRG_A1_4.C": "cpp",
+    "stdio.h": "c",
+    "stdlib.h": "c"
   }
 }
