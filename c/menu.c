@@ -61,12 +61,12 @@ int main(void)
         printf("\u2550");
     }
 
-    /*  gotoxy(24, 1);
+      gotoxy(24, 1);
       printf("hello");
       gotoxy(25, 1);
       printf("hello");
 
-  */
+  
     gotoxy(24, 2);
     printf("hello");
     gotoxy(1, 25);
