@@ -4,13 +4,14 @@ int main()
 {
     int array[100], n, c, d, swap;
 
-    printf("Enter number of elements\n");
+    printf("Ingrese tamano de arreglo: ");
     scanf("%d", &n);
 
-    printf("Enter %d integers\n", n);
-
     for (c = 0; c < n; c++)
-        scanf("%d", &array[c]);
+
+        printf("Ingrese un numero:\n");
+
+    scanf(" %i", &array[c]);
 
     for (c = 0; c < n - 1; c++)
     {
@@ -28,7 +29,7 @@ int main()
     printf("Sorted list in ascending order:\n");
 
     for (c = 0; c < n; c++)
-        printf("%d\n", array[c]);
+        printf("%d,", array[c]);
 
     return 0;
 }

@@ -1,70 +1,35 @@
-
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
-
-typedef struct Alumno  {
-
-char Matricula[6];
-char Nombre[25];
-char ApellidoP[50];
-char ApellidoM[50];
-int Edad;
-char Carrera[10];
-
-} Alumno;
-
-void Visualizar(struct Alumno *);
-
-
-void main()/* Rellenar y visualizar V */ 
+int main()
 {
-char buf[20];
+    int array[100], n, c, d, swap;
 
-struct Alumno Inicial;
+    printf("Ingrese tamano de arreglo: ");
+    scanf("%d", &n);
 
-struct Alumno arrDatos[20];
+    for (c = 0; c < n; c++)
 
+        printf("Ingrese un numero:\n");
 
+    scanf(" %i", &array[c]);
 
-for(int i=0;i<3;i++){
+    for (c = 0; c < n - 1; c++)
+    {
+        for (d = 0; d < n - c - 1; d++)
+        {
+            if (array[d] > array[d + 1]) /* For decreasing order use '<' instead of '>' */
+            {
+                swap = array[d];
+                array[d] = array[d + 1];
+                array[d + 1] = swap;
+            }
+        }
+    }
 
-printf("Estudiande %d \n",i+1);
-printf ("Matricula: \n");
-fgets(arrDatos[i].Matricula,7,stdin);
-printf ("Nombre: \n ");
-fgets(arrDatos[i].Nombre,25,stdin);
-printf("Apellido Paterno: \n");
-fgets(arrDatos[i].ApellidoP,50,stdin);
-printf("Apellido Materno: \n");
-fgets(arrDatos[i].ApellidoM,50,stdin);
-printf("Edad: \n ");
-scanf("%d",&arrDatos[i].Edad);
-fgets (buf, 20, stdin);
-printf ("Carrera: \n ");
-fgets(arrDatos[i].Carrera,50,stdin);
+    printf("Sorted list in ascending order:\n");
 
-system("clear");
-}
+    for (c = 0; c < n; c++)
+        printf("%d,", array[c]);
 
-
-Visualizar(arrDatos);
-}
-
-void Visualizar (struct Alumno *Datos) {
-system("clear");
-
-
-for(int i=0;i<3;i++){
-    printf("Estudiande %d \n",i+1);
-printf(" \nMatricual: %s", Datos[i].Matricula);
-printf("\nNombre: %s", Datos[i].Nombre);
-printf( "\nApellido Paterno: %s", Datos[i].ApellidoP);
-printf ("\nApellido Materno: %s", Datos[i].ApellidoM);
-printf("\nEdad: %d", Datos[i].Edad);
-printf("\nCarrera: %s\n", Datos[i].Carrera);
-}
-
-
+    return 0;
 }
