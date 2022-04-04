@@ -1,5 +1,5 @@
 // Fabiel Ramirez Garcia 368036
-// 11-Feb-20222 -----
+// 11-Feb-20222 -----3/1/22, 11:59 PM
 //  Algoritmo que lea 4 calificaciones de un alumno, calcular y desplegar el promedio acompañado de la leyenda APROBADO o REPROBADO
 // FRG_A4_1.C
 
