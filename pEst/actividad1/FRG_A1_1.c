@@ -13,7 +13,7 @@ int main(void)
 {
   char c;
   system("clear");
-  printf("Cual es su genero 1.-Masculino 2.-Femenino\n");
+  printf("Cual es su genero 1.-Masculino 2.-Femenino : ");
   c = getche();
 
   if (c == 49)

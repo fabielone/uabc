@@ -1,11 +1,8 @@
 // Fabiel Ramirez Garcia
 // 9-Feb-20222
-// Programa en C que a través de opciones (1.- MASCULINO 2.- FEMENINO )
-// preguntar al usuario cual es su género y desplegar la leyenda “MASCULINO ”, “ FEMENINO”
-// Leer 2 numeros, realizar la suma y desplegar la suma de los 2 numeros.
-/* Let's test it out */
-
-// FRG_ACT1_1.c
+// Programa en C que lea un número entero, y desplegar si el número es “PAR” o “IMPAR”
+//
+// FRG_ACT1_2.c
 
 #include <stdio.h>
 #include "./../../libraries/getch.h"
@@ -13,7 +10,7 @@
 
 int main(void)
 {
-  char c;
+  int c;
   system("clear");
   printf("Cual es su genero 1.-Masculino 2.-Femenino\n");
   c = getche();

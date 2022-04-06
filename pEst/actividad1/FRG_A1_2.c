@@ -4,13 +4,14 @@
 //
 // FRG_ACT1_2.c
 
+
 #include <stdio.h>
 #include "./../../libraries/getch.h"
 #include <stdlib.h>
 
 int main(void)
 {
-  char c;
+  int c;
   system("clear");
   printf("Cual es su genero 1.-Masculino 2.-Femenino\n");
   c = getche();
@@ -27,4 +28,5 @@ int main(void)
   {
     printf("\nno entendi\n");
   }
+
 }

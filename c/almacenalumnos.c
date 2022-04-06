@@ -94,7 +94,7 @@ void Arrange(struct Alumno Datos[20], short n)
                 if (strcmp(Datos[d].Matricula, Datos[d + 1].Matricula) > 0)
                 {
 
-                    printf("bigger");
+                    // printf("bigger");
                     swap = Datos[d];
                     Datos[d] = Datos[d + 1];
                     Datos[d + 1] = swap;
