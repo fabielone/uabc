@@ -197,7 +197,7 @@ void Recuadro(short c1, short r1, short c2, short r2, short tipo)
     gotoxy(ctwo-- - 1, r2);
 
     printf("\u2550\n");
-    delay(8);
+    
   }
 
   for (r = r1 + 1; r < r2; r++)
@@ -208,7 +208,7 @@ void Recuadro(short c1, short r1, short c2, short r2, short tipo)
     gotoxy(c2, rtwo-- - 1);
 
     printf("\u2551\n");
-    delay(8);
+    
   }
 }
 
