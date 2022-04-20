@@ -4,15 +4,15 @@
 // preguntar al usuario cual es su género y desplegar la leyenda “MASCULINO ”, “ FEMENINO”
 
 // FRG_ACT1_1.c
+//done
 
 #include <stdio.h>
 #include "./../../libraries/getch.h"
 #include <stdlib.h>
-
-int main(void)
+void main()
 {
   char c;
-  system("clear");
+  //system("clear");
   printf("Cual es su genero 1.-Masculino 2.-Femenino : ");
   c = getche();
 

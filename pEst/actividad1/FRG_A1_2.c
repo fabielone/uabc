@@ -3,30 +3,31 @@
 // Programa en C que lea un número entero, y desplegar si el número es “PAR” o “IMPAR”
 //
 // FRG_ACT1_2.c
-
+//done
 
 #include <stdio.h>
 #include "./../../libraries/getch.h"
 #include <stdlib.h>
 
-int main(void)
+void main()
 {
   int c;
   system("clear");
-  printf("Cual es su genero 1.-Masculino 2.-Femenino\n");
-  c = getche();
+  printf("Ingrese un numero entero\n");
+  scanf("%d",&c);
 
-  if (c == 49)
+
+  if (c%2)
   {
-    printf("\nMASCULINO\n");
-  }
-  else if (c == 50)
-  {
-    printf("\nFEMENINO\n");
+    printf("\nimpar\n");
   }
   else
   {
-    printf("\nno entendi\n");
+    printf("\npar\n");
   }
+  
 
 }
+ 
+  
+
