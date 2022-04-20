@@ -16,7 +16,7 @@ void funcion()
 
 {
 
-    system("clear");
+    //system("clear");
     ColorTexto(32);
     for(short col=0;col<8;col++){
 
