@@ -1,12 +1,20 @@
+
+
+// Fabiel Ramirez Garcia
+// Due date: 3/15/22, 11:59 PM
+
+// Función en "C" que genere 40 números aleatorios entre el 0 y 200, desplegar los números y la
+// leyenda de cada número si es par o impar , la cantidad de los números pares e impares así como
+//  la suma de los números pares o impares.
+
+// FRG_A6_1.C
+
+//done
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #define N 40
-
-// Fabiel Ramirez Garcia Due date: 3/15/22, 11:59 PM
-// Función en "C" que genere 40 números aleatorios entre el 0 y 200, desplegar los números y la
-// leyenda de cada número si es par o impar , la cantidad de los números pares e impares así como
-//  la suma de los números pares o impares.
 
 void funcion();
 

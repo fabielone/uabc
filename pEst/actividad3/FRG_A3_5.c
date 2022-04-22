@@ -2,6 +2,7 @@
 // 11-Feb-20222 -----
 // Algoritmo que sirva para calcular el volumen de un cilindro
 // FRG_A3_1.C
+//done
 
 #include <math.h>
 #include <stdlib.h>
@@ -9,5 +10,18 @@
 
 int main()
 {
-    printf("hello world");
+
+    float radio,altura,area;
+
+    puts("ingrese radio de la base del cilindro");
+    scanf("%f",&radio);
+
+    puts("ingrese la altura del cilindro");
+    scanf("%f",&altura);
+
+    
+
+    area=3.14*radio*radio*altura;
+
+    printf("el area del cilindro es : %.2f",area);
 }

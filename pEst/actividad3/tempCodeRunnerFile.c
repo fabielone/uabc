@@ -5,7 +5,7 @@
 dormido una persona durante toda su vida, considerando que todos 
 los años tienen 365 días. */
 // FRG_A3_1.C
-//done
+
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>

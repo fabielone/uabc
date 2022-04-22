@@ -1,7 +1,6 @@
 # uabc
 
 UABC 
-Programacion Estructirada
-Actividades
+Actividades y Talleres de Programacion Estructurada
 
 

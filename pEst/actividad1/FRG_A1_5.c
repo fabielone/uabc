@@ -2,7 +2,7 @@
 // 9-Feb-20222
 // Programa en C que lea 3 números y desplegar cuál número es del medio y su valor
 //
-// FRG_ACT1_1.c
+// FRG_ACT1_5.c
 //done
 
 #include <stdio.h>

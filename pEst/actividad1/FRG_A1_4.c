@@ -2,7 +2,7 @@
 // 9-Feb-20222
 // Programa en C que lea 3 números y desplegar cuál número es el mayor y su valor
 //
-// FRG_ACT1_1.c
+// FRG_ACT1_4.c
 //done
 
 #include <stdio.h>

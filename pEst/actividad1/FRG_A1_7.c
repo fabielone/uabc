@@ -23,6 +23,7 @@ Nota: Realizarlo anidado por el Verdadero
 #include <stdio.h>
 #include <stdlib.h>
 
+
 void main()
 {
 
@@ -42,40 +43,54 @@ void main()
    {
        printf("Repetir");
    }
-   else if (promedio<60)
-   {
-      printf("Extraordinario");
-   }
-   else if(promedio<70)
-   {
-       printf("Suficiente");
-   }
-   else if(promedio<80)
-   {
+   else {
+       if (promedio<60)
+            {
+                printf("Extraordinario");
+            }
+       else {
+           if(promedio<70)
+                {
+                    printf("Suficiente");
+                }
+            else {
+                if(promedio<80)
+       {
        printf("Regular");
    }
-   else if (promedio<90)
+                else {
+                    if (promedio<90)
    {
        printf("Bien");
    }
-   else if (promedio<98)
+                    else {
+                        if (promedio<98)
    {
        printf("Muy Bien");
    }
 
-   else if (promedio<100)
-   {
-       printf("Excelente");
-   }
+                        else {
+                            if (promedio<=100)
+                             {
+                                 printf("Excelente");
+                             }
    
    
-   else
-   {
-        printf("Error en promedio");
-   }
-   
+                            else {
+                                    if(promedio>100)
+                                     {
+                                        printf("Error en promedio");
+                                     }
+                                }
+                             }
+           
+                         }
+                     }
+                    }
 
 
-  
+             }
+        }
 
 }      
+

@@ -1,7 +1,9 @@
 // Fabiel Ramirez Garcia 368036
 // 11-Feb-20222 -----3/1/22, 11:59 PM
 //  Algoritmo que lea 4 calificaciones de un alumno, calcular y desplegar el promedio acompañado de la leyenda APROBADO o REPROBADO
+// condicion simple
 // FRG_A4_1.C
+// done
 
 #include <math.h>
 #include <stdlib.h>
@@ -9,5 +11,29 @@
 
 int main()
 {
-    printf("hello world");
+    int primera,segunda,tercera,cuarta;
+    float promedio;
+    puts("Ingrese Primera Calificacion");
+    scanf("%d",&primera);
+
+    puts("Ingrese segunda Calificacion");
+    scanf("%d",&segunda);
+
+    puts("Ingrese tercera calificacion");
+    scanf("%d",&tercera);
+
+    puts("Ingrese cuarta calificacion");
+    scanf("%d",&cuarta);
+    promedio =(float)(primera+segunda+tercera+cuarta)/4;
+
+    if(promedio>=60){
+
+        printf("El Promedio es %f, APROBADO",promedio);
+    }
+    if(promedio<60){
+      printf("El Promedio es %f, REPROBADO",promedio);
+    }
+
+   
+
 }

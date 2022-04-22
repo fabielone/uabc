@@ -5,6 +5,7 @@
 
 //Fabiel Ramirez Garcia
 //Función en "C" que despliegue la tabla de multiplicar de un número dado (número entre el 1 y 20).
+//done
 void funcion();
 
 int main() {

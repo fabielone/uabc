@@ -25,13 +25,80 @@ Algoritmo que lea 3 calificaciones calcule el promedio del alumno y desplegar:
 
 
  */
-// FRG_A4_1.C
+// FRG_A4_6.C
+//done
 
-#include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-int main()
+
+void main()
 {
-    printf("hello world");
-}
+
+    int primera,segunda,tercera;
+    float promedio;
+    puts("Ingrese Primera Calificacion");
+    scanf("%d",&primera);
+
+    puts("Ingrese segunda Calificacion");
+    scanf("%d",&segunda);
+
+    puts("Ingrese tercera calificacion");
+    scanf("%d",&tercera);
+    promedio =(float)(primera+segunda+tercera)/3;
+
+   if (promedio<30)
+   {
+       printf("Repetir");
+   }
+   else {
+       if (promedio<60)
+            {
+                printf("Extraordinario");
+            }
+       else {
+           if(promedio<70)
+                {
+                    printf("Suficiente");
+                }
+            else {
+                if(promedio<80)
+       {
+       printf("Regular");
+   }
+                else {
+                    if (promedio<90)
+   {
+       printf("Bien");
+   }
+                    else {
+                        if (promedio<98)
+   {
+       printf("Muy Bien");
+   }
+
+                        else {
+                            if (promedio<=100)
+                             {
+                                 printf("Excelente");
+                             }
+   
+   
+                            else {
+                                    if(promedio>100)
+                                     {
+                                        printf("Error en promedio");
+                                     }
+                                }
+                             }
+           
+                         }
+                     }
+                    }
+
+
+             }
+        }
+
+}      
+

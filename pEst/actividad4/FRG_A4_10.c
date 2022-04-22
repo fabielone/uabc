@@ -28,6 +28,7 @@ extra y Salario Total)
 
 */
 // FRG_A4_1.C
+//done 
 
 #include <math.h>
 #include <stdlib.h>
@@ -35,5 +36,41 @@ extra y Salario Total)
 
 int main()
 {
-    printf("hello world");
+    float horas,salario,normal,extra,total;
+   puts("ingrese horas semanales trabajadas");
+   scanf("%f",&horas);
+
+   puts("ingrese salario por hora :");
+   scanf("%f",&salario);
+
+   if(horas>40){
+
+       if (horas>49)
+       {
+           normal=salario*40;
+           extra=(9*salario*2)+(horas-49)*salario*3;
+           total=normal + extra;
+           printf("el pago normal es : %f\n",normal);
+           printf("el pago exgtra es : %f\n",extra);
+           printf("el pago total es : %f \n",total);
+       }
+       else
+       {
+           normal=salario*40;
+           extra=(horas-40)*salario*2;
+            total=normal + extra;
+           printf("el pago normal es : %f\n",normal);
+           printf("el pago exgtra es : %f\n",extra);
+           printf("el pago total es : %f \n",total);
+       }
+       
+
+   }
+   else{
+
+       normal=horas*salario;
+       printf("el salario normal es %f\n",normal);
+       printf("no hubo horas extras");
+   }
+   
 }

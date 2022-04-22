@@ -4,7 +4,7 @@
 #define N 40 
 
 //Fabiel Ramirez Garcia
-//Función en "C" que despliegue la tabla de multiplicar de un número dado (número entre el 1 y 20).
+// PROGRAMA QUE PREGUNTE LA CANTIDAD DE VECES QUE DESEA QUE SE REALICE EL PROGRAMA DE FIBONACCI
 void funcion();
 
 int main() {

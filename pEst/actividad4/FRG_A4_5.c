@@ -20,13 +20,91 @@ Algoritmo que lea 3 calificaciones calcule el promedio del alumno y desplegar:
  Si prom >100 Error en promedio 
    (ANIDADO POR EL VERDADERO)
  */
-// FRG_A4_1.C
+// FRG_A4_5.C
+//done
 
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
-
-int main()
+void main()
 {
-    printf("hello world");
+    
+    int primera,segunda,tercera;
+    float promedio;
+    puts("Ingrese Primera Calificacion");
+    scanf("%d",&primera);
+
+    puts("Ingrese segunda Calificacion");
+    scanf("%d",&segunda);
+
+    puts("Ingrese tercera calificacion");
+    scanf("%d",&tercera);
+    promedio =(float)(primera+segunda+tercera)/3;
+
+   if (promedio>=30)
+   {
+       
+        if (promedio>=60)
+            {
+                
+                 if(promedio>=70)
+                {
+                   
+
+                    if(promedio>=80)
+                 {
+                     if (promedio>=90)
+                         {
+
+                            if (promedio>=98)
+                                 {
+                                    if (promedio>100)
+                                         {
+                                 
+                                            printf("Error en promedio");
+                                     
+                                         } //ultimo iff
+   
+   
+                                     else {//100
+                                            printf("Excelente");
+
+                                    
+                                          }// ultimo else
+                                }//98
+
+                             else {//98
+                            printf("Muy Bien");
+                            
+                                }
+           
+                         }//90
+                            
+                 
+                     else {//90
+                        printf("Bien");
+                         }
+                   
+                     
+                 }//80
+                    else 
+                {//80
+                    printf("Regular");
+                    
+                }
+                }//70
+                else {//70
+                 printf("Suficiente");
+             }//60
+
+
+            }//60
+       else {//60
+          printf("Extraordinario");
+             }
+        
+   }//30
+   else {//30
+       printf("Repetir");
+      }
 }

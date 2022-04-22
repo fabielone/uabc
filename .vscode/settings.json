@@ -36,6 +36,7 @@
     "FRG_A1_3.C": "cpp",
     "FRG_A1_4.C": "cpp",
     "stdio.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "math.h": "c"
   }
 }

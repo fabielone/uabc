@@ -7,6 +7,7 @@ en cuenta la altura de la cerca. Elaborar un programa que muestre tales totales.
 
 */
 // FRG_A3_1.C
+//done 
 
 #include <math.h>
 #include <stdlib.h>
@@ -14,5 +15,19 @@ en cuenta la altura de la cerca. Elaborar un programa que muestre tales totales.
 
 int main()
 {
-    printf("hello world");
+    float longitud,ancho,area,perimetro,costo;
+
+    puts("INgrese longitud de terrono: ");
+    scanf("%f",&longitud);
+
+    puts("Ingresese ancho del terreno");
+    scanf("%f",&ancho);
+
+    area = longitud*ancho;
+    costo = area*35.40;
+    perimetro = longitud*2+ancho*2;
+    
+    printf("El costo para sembrar pasto es de : %.2f \n",costo);
+    printf("Se necesitan %.2f metros de alembre\n",perimetro);
+
 }

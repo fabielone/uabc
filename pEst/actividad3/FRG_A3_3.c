@@ -2,6 +2,7 @@
 // 11-Feb-20222 -----
 // Algoritmo que sirva para calcular el área de un cuadrado
 // FRG_A3_1.C
+// done 
 
 #include <math.h>
 #include <stdlib.h>
@@ -9,5 +10,12 @@
 
 int main()
 {
-    printf("hello world");
+    int side,area;
+
+    puts("ingrese la longitud del cuadrado");
+    scanf("%d",&side);
+
+    area = side*side;
+
+    printf("el area del cuadrado es : %d",area);
 }

@@ -6,12 +6,22 @@
 
 
 // FRG_A3_1.C
-
+//done
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 int main()
 {
-    printf("hello world");
+    float a, b , c ;
+
+    puts("ingrese cateto a");
+    scanf("%f",&a);
+
+    puts("ingrese cateto b");
+    scanf("%f",&b);
+
+    c=sqrt(a*a+b*b);
+
+    printf("el largo de la hipotenusa es : %.2f",c);
 }
