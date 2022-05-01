@@ -8,12 +8,35 @@ El gerente de su compañía desea saber cuánto dinero obtendrá en la semana ca
 El usuario proporcionará los datos de entrada.
 
 */
-// FRG_A8_1.C
+// FRG_A8_2.C
+// done
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-int main()
+void main()
 {
-    printf("hello world");
+    float sueldobaso, venta, sum_venta;
+    int n_vendedores;
+    puts("ingrese numero de vendedores:");
+    scanf("%d", &n_vendedores);
+    puts("ingrese el sueldo base");
+    scanf("%f", &sueldobaso);
+
+    for (int i = 0; i < n_vendedores; i++)
+    {
+
+        for (int j = 0; j < 3; j++)
+        {
+
+            if (j == 0)
+            {
+                printf("vendedor # %d\n", i + 1);
+            }
+            printf("ingrese valor de venta # %d \n", j + 1);
+            scanf("%f", &venta);
+            sum_venta += venta;
+        }
+        printf("sueldo base(%.2f) + comissiones(%.2f)=total( %.2f)\n", sueldobaso, sum_venta * .10, sueldobaso + sum_venta * .10);
+    }
 }

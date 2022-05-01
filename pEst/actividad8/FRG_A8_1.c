@@ -9,11 +9,41 @@ Diseñe un programa en C que lea las calificaciones obtenidas en las 5 unidades 
 
 */
 // FRG_A8_1.C
+// done
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
+#define S 40
+#define U 5
 
-int main()
+void main()
 {
-    printf("hello world");
+
+    int cal, calsum = 0, count = 0;
+    float promedio;
+
+    for (int i = 0; i < S; i++)
+    {
+        calsum = 0;
+        for (int j = 0; j < U; j++)
+        {
+            if (j == 0)
+            {
+                system("clear");
+                printf("Alumno # %d\n", i + 1);
+            }
+
+            printf("Iingrese calificacion # %d  : \n", j + 1);
+            scanf("%d", &cal);
+            calsum += cal;
+        }
+        promedio = (float)calsum / 5;
+
+        if (promedio < 50)
+        {
+            count++;
+        }
+    }
+
+    printf("el numero de estudiantes que no tiene derecho a titulacion son : %d", count);
 }

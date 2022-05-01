@@ -5,7 +5,6 @@ En los cabos la embarcación finisterra que tiene fondo de cristal, solo sale a 
 
 */
 // FRG_A8_5.c
-// done
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -29,7 +28,7 @@ void main()
 
         c = salir();
 
-    } while (c != 0 && counter < 11);
+    } while (c != 0 && counter < 12);
 
     printf("promedio de peso es %.2f\n", total_peso / counter);
 

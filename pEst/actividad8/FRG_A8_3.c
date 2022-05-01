@@ -20,12 +20,24 @@ NOTA:  Utilizar limpiar pantalla, esperar tecla
 
 
 */
-// FRG_A8_1.C
+// FRG_A8_3.C
+// done
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "../../libraries/getch.h"
 
-int main()
+void main()
 {
-    printf("hello world");
+    for (int i = 0; i < 10; i++)
+    {
+        system("clear");
+        for (int j = 0; j < 10; j++)
+        {
+            printf("%d x %d = %d\n", i + 1, j + 1, (j + 1) * (i + 1));
+        }
+
+        puts("presione una tecla para continuar");
+        getch();
+    }
 }
