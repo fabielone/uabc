@@ -5,32 +5,47 @@
 
 //Fabiel Ramirez Garcia
 //PROGRAMA QUE PIDA UN NÚMERO Y DESPLEGAR LA SALIDA DE FACTORIAL DE UN NÚMERO DADO.
-void funcion();
 
-int main() {
-    srand(time(NULL));
-    funcion();
-    return 0;
+void factorial(int n);
+
+
+void main() {
+    
+factorial(10);
+    
 
 }
 
-void funcion(void) {
+void factorial(int n){
 
-    int num;
+int product=1;
 
-  do
-  {
-    printf("Ingrese un numero entre 1 y 20:");
-   scanf("%d",&num); 
-  } 
-  while (num<1||num>20);
+for(int i=1;i<=n;i++){
 
-  for(int i=1;i<11;i++)
-    {
-      printf("%dx%d=%d\n",num,i,num*i);
+
+    product=product*i;
+
+    if(i<n){
+
+    printf("%d*",i);
+
     }
-  
-     
+    else if(i==n){
+      printf("%d",i);
+      printf("=%d",product);
+
+    }
+    
+      
 
     
-  }
+
+   
+
+
+}
+
+
+
+}
+
