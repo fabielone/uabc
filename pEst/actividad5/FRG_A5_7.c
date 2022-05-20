@@ -5,7 +5,7 @@ Función en C que pida el mes y día de nacimiento de una persona y el programa 
 el signo del zodiaco que le corresponde y su correspondiente horoscopo del Dia.
 
 */
-// FRG_A5_1.C
+// FRG_A5_7.C
 // DONE
 
 #include <math.h>

@@ -1,10 +1,10 @@
 // Fabiel Ramirez Garcia 368036
 // 11-Feb-20222 -----
-/* 
-Programa en C que sirva para el juego del CHINCHAMPU (Piedra, Papel, Tijera) para 1 jugador y la computadora,  (usar condición anidada) 
+/*
+Programa en C que sirva para el juego del CHINCHAMPU (Piedra, Papel, Tijera) para 1 jugador y la computadora,  (usar condición anidada)
 */
-// FRG_A5_1.C
-//done
+// FRG_A5_2.C
+// done
 
 #include <math.h>
 #include <stdlib.h>
@@ -13,83 +13,83 @@ Programa en C que sirva para el juego del CHINCHAMPU (Piedra, Papel, Tijera) par
 
 void main()
 {
-    int seleccion,compu ; 
+    int seleccion, compu;
     puts("Ingrese el numero de la opcion: 1. Piedra 2.Papel 3.Tijera");
-    scanf("%d",&seleccion);
+    scanf("%d", &seleccion);
 
     srand(time(0));
 
-    compu=rand()%3;
-   
-    if(seleccion==1){
+    compu = rand() % 3;
 
-        if(compu==0){
+    if (seleccion == 1)
+    {
+
+        if (compu == 0)
+        {
 
             puts("comput seleciono piedra");
 
             puts("empate");
-
         }
-        else if(compu==1){
-             puts("comput seleciono papel");
+        else if (compu == 1)
+        {
+            puts("comput seleciono papel");
 
             puts("perdistes");
-
         }
-        else {
+        else
+        {
 
             puts("comput seleciono tijera");
 
             puts("ganastes");
-
         }
-
     }
-    else if(seleccion==2){
-                if(compu==0){
+    else if (seleccion == 2)
+    {
+        if (compu == 0)
+        {
 
             puts("comput seleciono piedra");
 
             puts("ganastes");
-
         }
-        else if(compu==1){
-             puts("comput seleciono papel");
+        else if (compu == 1)
+        {
+            puts("comput seleciono papel");
 
             puts("empate");
-
         }
-        else {
+        else
+        {
 
             puts("comput seleciono tijera");
 
             puts("perdistes");
-
         }
-
     }
-    else if(seleccion==3){
+    else if (seleccion == 3)
+    {
 
-        if(compu==0){
+        if (compu == 0)
+        {
 
             puts("comput seleciono piedra");
 
             puts("perdistes");
-
         }
-        else if(compu==1){
-             puts("comput seleciono papel");
+        else if (compu == 1)
+        {
+            puts("comput seleciono papel");
 
             puts("ganastes");
-
         }
-        else {
+        else
+        {
 
             puts("comput seleciono tijera");
 
             puts("empate");
-
         }
     }
-
 }

@@ -37,7 +37,7 @@ void funcion()
         if (b == 1 && tecla == 32)
         {
 
-            printf("%c", tecla);
+            printf("%c", &tecla);
             i++;
             b++;
         }
