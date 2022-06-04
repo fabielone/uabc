@@ -19,31 +19,111 @@ http://www.ordenjuridico.gob.mx/Federal/PE/APF/APC/SEGOB/Instructivos/Instructiv
 
 */
 // FRG_A9_1.C
-#include <math.h>
-#include <stdlib.h>
+
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
 #include <string.h>
+#include "../../libraries/getch.h"
 
-void modifycurp(char *n);
 
-void sololetras(char *n);
 
-void solonumeros(char *n);
+void validarLetras(char string[], int a, char *ask);
+void validarNumeros(char string[], int a);
 
-void sololetra1(char *n);
+
+
 
 void main()
 {
-    char curp[18], sexo[1], nombre[20], s_nombre[20], p_a[20], s_a[20], estado[20];
 
-    modifycurp(curp);
+    char nombre[20];
+	
+    validarLetras(nombre,20,"Ingresar Nombre:");
 
-    printf("%s", curp);
+	validarNumeros(nombre,20);
+
+	printf("\n %s",nombre);
+
 }
 
-void modifycurp(char *n)
+void validarLetras(char string[], int a, char *ask)
 {
 
-    strcpy(n, "what");
-    strncat(n, "1fwefwefwefwefwefwefwefwefwefwef0", 20);
+    int i = 0, tecla, b = 0, c;
+    printf("%s ",ask);
+    scanf("%d%*c", &a);
+    do
+    {
+		 tecla = getch();
+        
+        if (tecla > 64 && tecla < 91 || tecla > 96 && tecla < 123)
+        {
+            printf("%c", tecla);
+			string[i]=tecla;
+
+            i++;
+            b = 1;
+        }
+
+		else{
+
+			
+
+			
+
+		}
+		
+
+		if(tecla==10){
+
+			string[i]='\0';
+
+			return ;
+		}
+
+		
+
+    } while (i < a);
+}
+
+void validarNumeros(char string[],int a)
+{
+
+    int i = 0, tecla, b = 0, c;
+    system("clear");
+    printf("Ingrese maximo de caracteres: ");
+    scanf("%d%*c", &a);
+    do
+    {
+		 tecla = getch();
+        
+        if (tecla > 47 && tecla < 58)
+        {
+            printf("%c", tecla);
+			string[i]=tecla;
+
+            i++;
+            b = 1;
+        }
+		else{
+
+			
+
+			
+
+		}
+		
+
+		if(tecla==10){
+
+			string[i]='\0';
+
+			return 0;
+		}
+
+		
+
+    } while (i < a);
 }
