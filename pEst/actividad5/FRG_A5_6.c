@@ -2,9 +2,8 @@
 // 11-Feb-20222 -----
 //  Función en C que lea 3 números y despegarlos en forma ascendente (usar AND o OR)
 
-
-// FRG_A5_1.C
-//done
+// FRG_A5_6.C
+// done
 
 #include <math.h>
 #include <stdlib.h>
@@ -12,65 +11,56 @@
 
 int main()
 {
-  int prim,seg,ter;
+    int prim, seg, ter;
 
     puts("ingrese el primer numero");
-    scanf("%d",&prim);
+    scanf("%d", &prim);
     puts("ingrese el segundo numero");
-    scanf("%d",&seg);
+    scanf("%d", &seg);
     puts("ingrese el tercer numero");
-    scanf("%d",&ter);
+    scanf("%d", &ter);
 
-    if(prim>=seg||prim>=ter){
+    if (prim >= seg || prim >= ter)
+    {
 
-        
+        if (seg > ter)
+        {
 
-        if(seg>ter){
-
-            if (prim>seg)
+            if (prim > seg)
             {
-                printf("%d,%d,%d",ter,seg,prim);
+                printf("%d,%d,%d", ter, seg, prim);
             }
             else
             {
-               printf("%d,%d,%d",ter,prim,seg);
+                printf("%d,%d,%d", ter, prim, seg);
             }
-            
-
         }
 
-        else{
+        else
+        {
 
-            if (prim>ter)
+            if (prim > ter)
             {
-                printf("%d,%d,%d",seg,ter,prim);
+                printf("%d,%d,%d", seg, ter, prim);
             }
             else
             {
-                printf("%d,%d,%d",seg,prim,ter);
+                printf("%d,%d,%d", seg, prim, ter);
             }
-            
-
-
         }
-
-
     }
-    else{
+    else
+    {
 
-        //primer es el mas chico
-        if(seg>ter){
+        // primer es el mas chico
+        if (seg > ter)
+        {
 
-            printf("%d,%d,%d",prim,ter,seg);
-
-
+            printf("%d,%d,%d", prim, ter, seg);
         }
-        else{
-             printf("%d,%d,%d",prim,seg,ter);
-
+        else
+        {
+            printf("%d,%d,%d", prim, seg, ter);
         }
-
     }
-
-
 }

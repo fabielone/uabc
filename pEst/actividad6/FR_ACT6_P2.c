@@ -19,6 +19,7 @@
 // 2578 TIENE 5 DÍGITOS
 
 // FRG_A6_P2.C
+// done
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -162,8 +163,8 @@ void Digitos(void)
     system("clear");
     //  AQUI DESARROLLO PROGRAMA
     printf("   DIGITOS\n");
-    int n;         // variable declaration
-    int count = 0; // variable declaration
+    int n;
+    int count = 0;
     printf("Ingrese un numero : ");
     scanf("%d", &n);
     while (n != 0)
