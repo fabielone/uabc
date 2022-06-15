@@ -30,7 +30,7 @@ http://www.ordenjuridico.gob.mx/Federal/PE/APF/APC/SEGOB/Instructivos/Instructiv
 
 
 void validarLetras(char string[], int a, char *ask);
-void validarNumeros(char string[], int a);
+void validarNumeros(char string[], int a, char *ask);
 
 
 
@@ -38,11 +38,11 @@ void validarNumeros(char string[], int a);
 void main()
 {
 
-    char nombre[20];
+    char nombre[20],nombre1[20];
 	
-    validarLetras(nombre,20,"Ingresar Nombre:");
+    validarLetras(nombre1,20,"Ingresar Nombre:");
 
-	validarNumeros(nombre,20);
+	validarNumeros(nombre,20,"Ingresear Numero");
 
 	printf("\n %s",nombre);
 
@@ -52,15 +52,15 @@ void validarLetras(char string[], int a, char *ask)
 {
 
     int i = 0, tecla, b = 0, c;
-    printf("%s ",ask);
-    scanf("%d%*c", &a);
+    printf("\n %s ",ask);
+   
     do
     {
 		 tecla = getch();
         
         if (tecla > 64 && tecla < 91 || tecla > 96 && tecla < 123)
         {
-            printf("%c", tecla);
+            printf("%d", tecla);
 			string[i]=tecla;
 
             i++;
@@ -88,13 +88,13 @@ void validarLetras(char string[], int a, char *ask)
     } while (i < a);
 }
 
-void validarNumeros(char string[],int a)
+void validarNumeros(char string[],int a, char *ask)
 {
 
     int i = 0, tecla, b = 0, c;
-    system("clear");
-    printf("Ingrese maximo de caracteres: ");
-    scanf("%d%*c", &a);
+    
+    printf("\n%s",ask);
+   
     do
     {
 		 tecla = getch();
@@ -120,7 +120,7 @@ void validarNumeros(char string[],int a)
 
 			string[i]='\0';
 
-			return 0;
+			return ;
 		}
 
 		

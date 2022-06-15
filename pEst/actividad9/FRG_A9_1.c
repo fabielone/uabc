@@ -38,9 +38,9 @@ void validarNumeros(char string[], int a, char *ask);
 void main()
 {
 
-    char nombre[20];
+    char nombre[20],nombre1[20];
 	
-    validarLetras(nombre,20,"Ingresar Nombre:");
+    validarLetras(nombre1,20,"Ingresar Nombre:");
 
 	validarNumeros(nombre,20,"Ingresear Numero");
 
@@ -52,8 +52,8 @@ void validarLetras(char string[], int a, char *ask)
 {
 
     int i = 0, tecla, b = 0, c;
-    printf("%s ",ask);
-    scanf("%d%*c", &a);
+    printf("\n %s ",ask);
+   
     do
     {
 		 tecla = getch();
@@ -93,7 +93,7 @@ void validarNumeros(char string[],int a, char *ask)
 
     int i = 0, tecla, b = 0, c;
     
-    printf("%s",ask);
+    printf("\n%s",ask);
    
     do
     {
@@ -120,7 +120,7 @@ void validarNumeros(char string[],int a, char *ask)
 
 			string[i]='\0';
 
-			return 0;
+			return ;
 		}
 
 		

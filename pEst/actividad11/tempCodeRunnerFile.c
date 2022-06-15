@@ -3,9 +3,11 @@
 #include <time.h>
 #define N 40 
 #include "./../../libraries/getch.h"
+#include "./../../libraries/validation.h"
 
 
 //Fabiel Ramirez Garcia
+
 /* 
 PROGRAMA CON UNA LIBRERÍA (FUNCIONES DE VALIDAR NÚMEROS)  
 soolo numeros , no repetidos 
@@ -36,8 +38,14 @@ NOTA3: VALIDAR QUE SI YA ESTA ORDENADO NO VOLVER ORDENAR.
 
 */
 
+
 void fibonacci(int n);
 int menu();
+void llenarvectormanual(int arr[]);
+void lvectoral(int arr[]);
+void imprimirv(int arr[]);
+void ordenarv(int arr[]);
+void buscarv(int arr[]);
 
 
 void main() {
@@ -52,7 +60,7 @@ void main() {
   
           char term;
           int num;
-          scanf("%*c");
+          
           
 
     switch (sel)
@@ -61,21 +69,19 @@ void main() {
 
           case 49:
           
-            if(scanf("%d%c", &num, &term) != 2 || term != '\n'){
-            printf("failure\n");
-            }
-            else{
-            printf("valid integer followed by enter key\n");
-            }
+            llenarvectormanual(arr);
           break;
 
           case 50:
+          lvectoral(arr);
           break;
 
           case 51:
+          imprimirv(arr);
           break;
 
           case 52:
+          ordenarv(arr);
           break;
 
   
@@ -131,6 +137,7 @@ void fibonacci(int n){
 int menu(){
 
     int opc;
+    system("clear");
     do
   {
    puts("Menu");
@@ -155,6 +162,112 @@ int menu(){
   } while (opc < 48 || opc > 52);
 
     
+
+
+
+}
+
+void llenarvectormanual(int arr[]){
+
+
+
+  for(int i=0;i<10;i++){
+
+    int c,p;
+
+    printf("ingrese el numero para la posicion: %d \n",i);
+
+    c=rInt(1,20);
+
+    p=searchArray(arr,c);    
+
+    
+    while((c==-1)||(p==1)){
+
+        puts("Incorrecto, por favor ingrese un numero entre 1 y 20 y q no sea repedito \n");
+        
+        c=rInt(1,20);
+        p=searchArray(arr,c);
+
+    }
+
+
+    arr[i]=c;
+    
+
+
+  }
+
+
+}
+
+
+void lvectoral(int arr[]){
+
+
+
+  for(int i=0;i<10;i++){
+
+    int c,p;
+
+    srand(time(NULL));
+
+    c=rand()%19;
+
+    p=searchArray(arr,c);    
+
+    
+    while((p==1)){
+
+       
+        c=rand()%19;
+        p=searchArray(arr,c);
+
+    }
+
+
+    arr[i]=c;
+    
+
+
+  }
+
+
+}
+
+
+void imprimirv(int arr[]){
+
+  for(int i=0;i<10;i++){
+
+    printf("\n %d",arr[i]);
+  }
+
+  getch();
+  
+}
+
+void ordenarv(int arr[]){
+
+
+  int swap;
+
+
+ for (int c = 0; c < 10- 1; c++)
+            {
+                for (int d = 0; d < 10 - c - 1; d++)
+                {
+
+                    if ((arr[d]) > (arr[d + 1]))
+                    {
+
+                        swap = arr[d];
+                        arr[d] = arr[d + 1];
+                        arr[d + 1] = swap;
+                    }
+                }
+            }
+
 
 
 
